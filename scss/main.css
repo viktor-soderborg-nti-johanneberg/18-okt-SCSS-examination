@@ -1,0 +1,54 @@
+main {
+  display: -ms-grid;
+  display: grid;
+}
+
+main header {
+  position: relative;
+}
+
+main header img {
+  max-width: 100vw;
+  width: 100%;
+}
+
+main header i {
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.5rem !important;
+}
+
+main section {
+  background-color: #000;
+}
+
+main nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 69px;
+  width: 100%;
+  max-height: 126px;
+  height: 100%;
+}
+
+h3, a {
+  color: #FFF;
+}
+
+*, html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */
