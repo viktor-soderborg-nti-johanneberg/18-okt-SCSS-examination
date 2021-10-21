@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
 main {
   max-width: 100vw;
+  max-height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100vw;
@@ -31,20 +32,93 @@ main header i {
   font-size: 1.5rem !important;
 }
 
-main section {
+main section.items {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: sec;
   background-color: #000;
   display: -ms-grid;
   display: grid;
+  grid-gap: 3rem;
+  -ms-grid-columns: 35rem 35rem 35rem;
+      grid-template-columns: 35rem 35rem 35rem;
+  -ms-grid-rows: 30rem 30rem 30rem;
+      grid-template-rows: 30rem 30rem 30rem;
+      grid-template-areas: "a1 a2 a3" "a4 a5 a6" "a7 a8 a9";
 }
 
-main section img {
+main section.items img {
   max-width: 19.5rem;
   width: 100%;
   max-height: 19.5rem;
   height: 100%;
+}
+
+main section.items button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-top: 2rem;
+  background-color: #E83F57;
+  color: white;
+  padding: .75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: .5rem;
+}
+
+main section.items .a1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a1;
+}
+
+main section.items .a2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: a2;
+}
+
+main section.items .a3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: a3;
+}
+
+main section.items .a4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: a4;
+}
+
+main section.items .a5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: a5;
+}
+
+main section.items .a6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: a6;
+}
+
+main section.items .a7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: a7;
+}
+
+main section.items .a8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: a8;
+}
+
+main section.items .a9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: a9;
 }
 
 main footer {
@@ -55,6 +129,9 @@ main footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 main footer nav {
@@ -91,7 +168,7 @@ main footer .address {
   font-family: 'Fira Sans', sans-serif;
 }
 
-h2, h3, a {
+h2, h3, a, p {
   color: #FFF;
   text-decoration: none;
 }
