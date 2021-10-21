@@ -51,6 +51,10 @@ main footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: ft;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main footer nav {
@@ -70,12 +74,26 @@ main footer nav {
   height: 100%;
 }
 
+main footer .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 :root {
   font-family: 'Fira Sans', sans-serif;
 }
 
 h2, h3, a {
   color: #FFF;
+  text-decoration: none;
 }
 
 h2.dark {

@@ -44,6 +44,9 @@ main {
     
     footer {
         grid-area: ft;
+        background-color: $gray;
+        display: flex;
+
         nav {
         display: flex;
         flex-direction: column;
@@ -52,6 +55,12 @@ main {
         width: 100%;
         max-height: 126px;
         height: 100%;
+        }
+
+        .address {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
 
     }
