@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
 @import './variables';
 
-h3, a {
+:root {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h2, h3, a {
     color: $white;
+}
+
+h2.dark {
+    color: $black;
 }
